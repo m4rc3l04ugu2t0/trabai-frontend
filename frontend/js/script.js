@@ -86,7 +86,7 @@ const handleLogin = (e) => {
   login.style.display = 'none';
   chat.style.display = 'flex';
 
-  WebSocket = new WebSocket('ws://localhost:8080');
+  WebSocket = new WebSocket('wss://trabai-backend.onrender.com');
   WebSocket.onmessage = processMessage;
 };
 
